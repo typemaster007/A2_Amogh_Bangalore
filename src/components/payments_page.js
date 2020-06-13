@@ -182,8 +182,8 @@ export default class Payment extends React.Component {
         <div class="col-75" style={{ display: 'flex'}}>
           <div class="container4" style={{float : 'left', paddingRight : '5px', display: 'flex'}}>
             <form onSubmit={this.handleSubmit} noValidate >
-              <div class="row1">
-                <div class="col-50">
+              <div class="row1" style={{ display: 'flex'}}>
+                <div class="col-50" style={{ float : 'left'}}>
                   <h4>Billing Address</h4>
                   <label for="fname"><i class="fa fa-user"></i> Full Name</label>
                   <input type="text" class="payput" onChange={this.handleChange} 
@@ -208,7 +208,7 @@ export default class Payment extends React.Component {
                   </div>
                 </div>
       
-                <div class="col-50">
+                <div class="col-50" >
                   <h4>Payment</h4>
                   
                   <label for="cname">Name on Card</label>
@@ -237,6 +237,7 @@ export default class Payment extends React.Component {
                 </div>               
       
               </div>
+              <div >
               <label>
                 <input type="checkbox" checked="checked" name="sameadr"/> Shipping address same as billing
               </label>
@@ -253,7 +254,7 @@ export default class Payment extends React.Component {
                 </div></div> : 'Form not submitted'}
                 
                 </Popup>
-              
+              </div>
             </form>
           </div>
           <div class="container6" style={{float : 'left', paddingRight : '5px'}}>
@@ -278,6 +279,7 @@ export default class Payment extends React.Component {
                   <div>&nbsp;{errors.cvv.length > 0 && errors.cvv != 'set' 
                   &&   <span1 className='error1'>{errors.cvv}</span1>}</div>
           </div>
+          
         </div>
       
         
