@@ -1,26 +1,91 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import logo from './components/images/logo_web.PNG'; 
+import Popup from "reactjs-popup";
+import Modal from "./components/tools/modalcomp";
+import Tooltip from 'react-bootstrap/Tooltip';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Button from 'react-bootstrap/Button';
 
-function App() {
-  return (
+
+
+import Login from "./components/login_component";
+import SignUp from "./components/signup_component";
+import Home from "./components/home_page";
+import Rooms from "./components/roomlistings_page";
+import Viewroom from "./components/viewrooms_page";
+import Payments from "./components/payments_page";
+
+
+
+class App extends Component  {
+
+  state = {
+    show: false
+  };
+  showModal = e => {
+    this.setState({
+      show: !this.state.show
+    });
+  };
+  
+ render(){
+  return (<Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+        <div className="container">
+          <img className="img1" src={logo} alt="Logo" />
+          <Link className="navbar-brand" to={"/"}>RentalVista</Link>
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to={"/sign-in"}>Login</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/register"}>Register</Link>
+              </li>
+              <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+              <li className="nav-item">              
+              <OverlayTrigger  
+                placement= "bottom" overlay={  <Tooltip id={`tooltip-$'bottom'`}><strong>Help Section</strong></Tooltip>}>
+                <Link className="nav-link" variant="secondary">Help</Link>
+              </OverlayTrigger>                
+              </li>
+              <li className="nav-item">
+              <OverlayTrigger  
+                placement= "bottom" overlay={  <Tooltip id={`tooltip-$'bottom'`}><strong>About Section</strong></Tooltip>}>
+                <Link className="nav-link" >About</Link>
+              </OverlayTrigger>   
+              </li>
+              <li>
+              <OverlayTrigger  
+                placement= "bottom" overlay={  <Tooltip id={`tooltip-$'bottom'`}><strong>Contact Section</strong></Tooltip>}>
+                <Link className="nav-link" to={"/"}>Contact us</Link>
+              </OverlayTrigger>                  
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div className="auth-wrapper">
+        <div className="auth-inner">
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path="/sign-in" component={Login} />
+            <Route path="/register" component={SignUp} />
+            <Route path="/roomlistings" component={Rooms} />
+            <Route path="/viewroom" component={Viewroom} />
+            <Route path="/payments" component={Payments} />
+          </Switch>
+        </div>
+      </div>
+    </div></Router>
   );
+}
 }
 
 export default App;
