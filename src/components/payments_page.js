@@ -3,13 +3,14 @@ import ReactDOM from "react-dom";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 import { toast } from "react-toastify";
+import Popup from "reactjs-popup";
 
 import "react-toastify/dist/ReactToastify.css";
 import "./css/paycss.css";
 import {validateCard} from "./tools/validate_card";
 
 toast.configure();
-
+let set = false;
 const validateemail = 
   RegExp(/^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i);
 
@@ -18,30 +19,51 @@ const product = {
     price: 299.99,
     description: "Room PAdvertisement Fee"
   }
-
-  let set = false;
+const validateForm = (errors) => {
+    let valid = false;
+    Object.values(errors).forEach(      // if we have an error string set valid to false
+      (val) => 
+      { if(val=='set')
+            { valid = true; }
+            else
+            { valid = false; }
+      }      
+    );
+    return valid;
+  }
+  const countErrors = (errors) => {
+    let count = 0;
+    Object.values(errors).forEach(
+      (val) => {if(val.length > 0)
+        {
+            if(val!='set'){
+                (count = count+1);
+            }
+        } }
+    );
+    return count;
+  }
+  
 
 export default class Payment extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       formValid: false,
-      errorCount: null,
       fullname: null,
       cardnum: null,
-      cardval: false,
       email: null,
       expmonth: null,
       expyear: null,
+      cvv: null,
       flag: 0,
       errors: {
-        cardval: false,
         cardnum: '',
         fullname: '',
         email: '',
         expmonth: '',
         expyear: '',
-        mobile: '',
+        cvv: '',
       }
     };
   }
@@ -49,10 +71,7 @@ export default class Payment extends React.Component {
   handleChange = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
-    let errors = this.state.errors;
-      
-
-    
+    let errors = this.state.errors;   
   
     switch (name) {
       case 'cardnumber': 
@@ -120,33 +139,49 @@ export default class Payment extends React.Component {
           break;
 
       case 'expyear':
-          if((!value.match(/^[0-9 ]+$/i)))           //Accepts only Number input and disregards other characters
+          if((!value.match(/^[0-9]+$/i)))           //Accepts only Number input and disregards other characters
           {
             event.target.value = event.target.value.replace(/[^0-9]/ig, '')
           }
           let curyear = new Date().getFullYear();
-          errors.expyear = value > 2019 ? 'set' : 'Invalid Year Entered!'
+          errors.expyear = value > curyear ? 'set' : 'Invalid Year Entered!'
           break;
 
-     
+      case 'cvv':
+            if((!value.match(/^[0-9]+$/i)))           //Accepts only Number input and disregards other characters
+            {
+              event.target.value = event.target.value.replace(/[^0-9]/ig, '')
+            }           
+            errors.cvv = value >= 1 ? 'set' : 'Invalid CVV Entered!'
+          break;     
 
       default:
         break;
     }
   
     this.setState({errors, [name]: value}, ()=> {
-        console.log(errors)
-    })
+      console.log(errors)
+  })
+}
+
+
+  handleSubmit = (event) => {
+          
+        event.preventDefault();
+        this.setState({formValid: validateForm(this.state.errors)});
+        this.setState({errorCount: countErrors(this.state.errors)});   
+    
   }
 
+ 
+
   render (){
-    const {errors} = this.state;
+    const {errors, formValid} = this.state;
       return (
-        <div class="row">
-        <div class="col-75">
-          <div class="container4" style={{float : 'left', paddingRight : '5px'}}>
-            <form action="/action_page.php">
-      
+        <div class="row" style={{ display: 'flex'}}>
+        <div class="col-75" style={{ display: 'flex'}}>
+          <div class="container4" style={{float : 'left', paddingRight : '5px', display: 'flex'}}>
+            <form onSubmit={this.handleSubmit} noValidate >
               <div class="row1">
                 <div class="col-50">
                   <h4>Billing Address</h4>
@@ -181,31 +216,44 @@ export default class Payment extends React.Component {
                   noValidate id="cname" name="fullname" placeholder="John More Doe"/>
                   <label for="ccnum">Credit card number</label>
                   <input type="text" className ="form-inline1" class="payput"  onChange={this.handleChange} 
-                  noValidate id="ccnum"  maxLength="16" name="cardnumber" placeholder="1111222233334444"/>
+                    noValidate id="ccnum"  maxLength="16" name="cardnumber" placeholder="1111222233334444"/>
                   
                   <label for="expmonth">Exp Month</label>
                   <input type="text" class="payput" id="expmonth" onChange={this.handleChange} 
-                  noValidate name="expmonth"  maxLength="3" placeholder="Feb"/>
+                    noValidate name="expmonth"  maxLength="3" placeholder="Feb"/>
       
                   <div class="row">
                     <div class="col-50">
                       <label for="expyear">Exp Year</label>
                       <input type="text" class="payput" maxLength="4" onChange={this.handleChange} 
-                  noValidate  id="expyear" name="expyear" placeholder="2021"/>
+                      noValidate  id="expyear" name="expyear" placeholder="2021"/>
                     </div>
                     <div class="col-50">
                       <label for="cvv">CVV</label>
-                      <input type="text" class="payput" maxLength="3" id="cvv" name="cvv" placeholder="352"/>
+                      <input type="text" class="payput" onChange={this.handleChange} 
+                      noValidate maxLength="3" id="cvv" name="cvv" placeholder="352"/>
                     </div>
                   </div>
-                </div>
-                
+                </div>               
       
               </div>
               <label>
                 <input type="checkbox" checked="checked" name="sameadr"/> Shipping address same as billing
               </label>
-              <input type="submit" value="Continue to checkout" class="btn5"/>
+              <Popup trigger={<button type="submit" className="btn btn-primary btn-inline">Checkout</button>} 
+                modal
+                closeOnDocumentClick
+                >                
+                {this.state.errorCount !== null ? 
+                <div style={{border: '5px',borderBlockColor: 'black', borderRadius: '10px', background: 'white'}}>
+                  <h8 style={{display: 'flex', justifyContent: 'center'}}>Payment details</h8>
+                  <div className="validmsg" style={{display: 'flex', justifyContent: 'center'}}> 
+                {formValid ? 'Payment Completed Successfully!' 
+                : 'Incomplete details, Please enter all the details correctly! (Press Enter to close or click outside)'}
+                </div></div> : 'Form not submitted'}
+                
+                </Popup>
+              
             </form>
           </div>
           <div class="container6" style={{float : 'left', paddingRight : '5px'}}>
@@ -223,8 +271,12 @@ export default class Payment extends React.Component {
                   <br/>
                   <div>&nbsp;{errors.expmonth.length > 0 && errors.expmonth != 'set' 
                   &&   <span1 className='error1'>{errors.expmonth}</span1>}</div>
+                  <br/>
                   <div>&nbsp;{errors.expyear.length > 0 && errors.expyear != 'set' 
                   &&   <span1 className='error1'>{errors.expyear}</span1>}</div>
+                  <br/>
+                  <div>&nbsp;{errors.cvv.length > 0 && errors.cvv != 'set' 
+                  &&   <span1 className='error1'>{errors.cvv}</span1>}</div>
           </div>
         </div>
       

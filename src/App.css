@@ -34,6 +34,15 @@ h1,h2,h4,h5,h6,label,span {
   margin: 5px 10px 5px 0;
   margin-right: 100px;
 }
+h8 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+  text-align: center;
+  align-self:  center;
+  
+  
+}
 .span1 {
   font-weight: 500;
   font-family: 'Fira Sans', sans-serif;
@@ -216,7 +225,8 @@ form {
   
 }
 .validmsg { 
-  margin-left: 110px;
+  font-size: 18px;
+  
 }
 
 

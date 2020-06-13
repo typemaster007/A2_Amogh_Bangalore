@@ -127,7 +127,7 @@ const validFirstnamereg =
         return (
             <div class="container5">
             <form onSubmit={this.handleSubmit} noValidate >
-                <h3>Register</h3>                
+                <h3 style={{display: 'flex', justifyContent: 'center'}}>Register</h3>                
 
                 <div className="firstname">                
                     <label>Name:  &nbsp;&nbsp;</label>
@@ -177,7 +177,8 @@ const validFirstnamereg =
                 closeOnDocumentClick
                 >                
                 {this.state.errorCount !== null ? 
-                <div><h3>Register details</h3><div className="validmsg"> 
+                <div><h3 style={{display: 'flex', justifyContent: 'center'}}>Register details</h3>
+                <div className="validmsg" style={{display: 'flex', justifyContent: 'center'}}> 
                 {formValid ? 'User registered Successfully! ✅ directing to Home Page' 
                 : 'Incomplete details, Please enter all the details correctly! '}</div></div> : 'Form not submitted'}
                 
