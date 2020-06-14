@@ -6,6 +6,11 @@
 #Author
 * [Amogh Adithya Bangalore](am210633@dal.ca)[B00833535] - (Web development)
 
+#Links
+This Assignment is avaliable on:
+1. Heroku : https://a2-amogh-bangalore.herokuapp.com/home
+2. Git    : https://github.com/typemaster007/A2_Amogh_Bangalore.git
+
 ##Explanantion
 The web assignment is aimed at creating four front-end web features of the project that was chosen in the previous assignment.
 The pages that were chosen for this assignment are:
