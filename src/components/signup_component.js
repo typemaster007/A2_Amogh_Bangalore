@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Popup from "reactjs-popup";
 import Dialog from "./home_page";
+import {Link} from 'react-router-dom';
 
 const validEmailRegex = 
   RegExp(/^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i);
@@ -186,7 +187,7 @@ const validFirstnamereg =
                 
                
                 
-                <button type="submit" className="btn btn-primary btn-inline2">Cancel</button>
+                <Link type="submit" className="btn btn-primary btn-inline2" to="/">Cancel</Link>
                 <p className="forgot-password2 ">
                     Already registered <a href="/sign-in">sign in?</a>                    
                 </p>

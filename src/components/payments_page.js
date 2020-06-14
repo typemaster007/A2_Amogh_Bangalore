@@ -2,7 +2,6 @@ import React from "react";
 
 import { toast } from "react-toastify";
 import Popup from "reactjs-popup";
-
 import "react-toastify/dist/ReactToastify.css";
 import "./css/paycss.css";
 import {validateCard} from "./tools/validate_card";
@@ -10,6 +9,7 @@ import visa from './images/visa.svg';
 import amex from './images/amex.svg'; 
 import master from './images/mastercard.svg'; 
 import discover from './images/discover.svg'; 
+import {Link} from 'react-router-dom';
 
 toast.configure();
 let set = false;
@@ -241,10 +241,10 @@ export default class Payment extends React.Component {
       
               </div>
               <div >
-              <label>
-                <input type="checkbox" checked="checked" name="sameadr"/> Shipping address same as billing
+              <label style={{marginLeft: '30px'}}>
+                 Complete Payment process:
               </label>
-              <Popup trigger={<button type="submit" className="btn btn-primary btn-inline">Checkout</button>} 
+              <Popup trigger={<button type="submit" className="btn btn-primary btn-inline" style={{marginLeft: '90px'}}>Checkout</button>} 
                 modal
                 closeOnDocumentClick
                 >                
@@ -257,6 +257,7 @@ export default class Payment extends React.Component {
                 </div></div> : 'Form not submitted'}
                 
                 </Popup>
+                <Link type="submit" className="btn btn-primary btn-inline2" to="/">Cancel</Link>
               </div>
             </form>
           </div>
