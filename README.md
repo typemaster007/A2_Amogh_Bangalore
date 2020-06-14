@@ -18,10 +18,10 @@ The pages that were chosen for this assignment are:
 |----------------------------------------------|-----------------------------------------------------------------------|
 | 1. Landing Page (Home Page) (Mandatory)      | Route: "/home"       |
 | 2. Registration Page (Sign-up) (Mandatory)   | Route: "/register"      |
-| 3. Payments Pagee    						   | Route: "/payments"    |
+| 3. Payments Page    						   | Route: "/payments"    |
 | 4. Blogs Page    							   | Route: "/blogs"    |
 
-
+Supporting page: search_complete.js
 ## Flow of control:
 1. Once the landing page is loaded, you will see the RentalVista logo and the navigation bar with multiple options - (Register, Blog, Payments, etc.)
 2. The search bar in the middle-left of the landing page is used to run the search for locations for the user.
