@@ -1,17 +1,17 @@
-﻿# Assignment 2
+﻿## Assignment 2
 
 * Date Created: 10 JUN 2020
 * Last Modification Date: 14 JUN 2020
 
-#Author
+## Author
 * [Amogh Adithya Bangalore](am210633@dal.ca)[B00833535] - (Web development)
 
-#Links
+## Links
 This Assignment is avaliable on:
 1. Heroku : https://a2-amogh-bangalore.herokuapp.com/home
 2. Git    : https://github.com/typemaster007/A2_Amogh_Bangalore.git
 
-##Explanantion
+## Explanantion
 The web assignment is aimed at creating four front-end web features of the project that was chosen in the previous assignment.
 The pages that were chosen for this assignment are:
 1. Landing Page (Home Page) (Mandatory)
@@ -19,7 +19,7 @@ The pages that were chosen for this assignment are:
 3. Payments Page 
 4. Blogs Page
 
-Flow of control:
+## Flow of control:
 1. Once the landing page is loaded, you will see the RentalVista logo and the navigation bar with multiple options - (Register, Blog, Payments, etc.)
 2. The search bar in the middle-left of the landing page is used to run the search for locations for the user.
 3. The user can enter the query location and will be navigated to the placeholder room views page.
@@ -28,7 +28,7 @@ Flow of control:
 6. The Blogs option will navigate the user to the blogs page, where the user can create a blog for submission and browse other blogs.
 7. The Payments option will navigate the user to the Payments page, where the user can enter the payment details with validations.
 8. The homepage has the available options highlighted active which will make it user for the marker to navigate active pages.
-#Files Inlcuded
+## Files Inlcuded
 --------------------------------------------------
 1. home_page.js (Landing Page) Route: "/home" 
 2. signup_component.js (Signup Page) Route: "/register"
@@ -50,7 +50,7 @@ Placeholder pages which are kept for future additions to the assignment are plac
 2. modal.css
 3. paycss.css
 ---------------------------------------------------
-#Images
+## Images
 1. amex.svg
 2. discover.svg 
 3. logo_web.png
