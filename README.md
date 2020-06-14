@@ -4,7 +4,7 @@
 * Last Modification Date: 14 JUN 2020
 
 ## Author
-* [Amogh Adithya Bangalore](am210633@dal.ca) [B00833535] - (Web development)
+* [Amogh Adithya Bangalore] [am210633@dal.ca] [B00833535] - (Web developmer)
 
 ## Getting Started
 This Assignment is avaliable on:
@@ -13,7 +13,7 @@ This Assignment is avaliable on:
 
 ### Explanantion
 The web assignment is aimed at creating four front-end web features of the project that was chosen in the previous assignment.
-The pages that were chosen for this assignment are:
+The main four pages that were chosen for this assignment are:
 |      Feature Name         				   | 							Route                                     |
 |----------------------------------------------|-----------------------------------------------------------------------|
 | 1. Landing Page (Home Page) (Mandatory)      | Route: "/home"       |
@@ -26,7 +26,8 @@ API's used: reactjs-popup, react-toastify
 Typographic choice: 'Fira Sans', 'sans-serif', 'react-dom'
 Color Scheme: Blue and White (Reason: Aesthetic Appeal and calming effect)
 
-Supporting page: search_complete.js
+**Supporting page:** search_complete.js (Used to support the landing page [home.page.js]
+
 ### Flow of control:
 1. Once the landing page is loaded, you will see the RentalVista logo and the navigation bar with multiple options - (Register, Blog, Payments, etc.)
 2. The search bar in the middle-left of the landing page is used to run the search for locations for the user.
