@@ -1,68 +1,109 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+﻿# Assignment 2
 
-## Available Scripts
 
+* Date Created: 10 JUN 2020
+* Last Modification Date: 14 JUN 2020
+
+
+* [Amogh Adithya Bangalore](am210633@dal.ca) - (Web development)
+
+
+
+## Getting Started
+
+
+### Prerequisites
+
+Give examples or provide a list of the required software / libraries / plug-ins
+
+
+See the following section for detailed step-by-step instructions on how to install this software / libraries / plug-ins
+
+### Installing
 In the project directory, you can run:
 
-### `npm start`
+npm install
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+npm start
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```
+Give the example
+```
 
-### `npm test`
+Once the installation is complete, Open http://localhost:3000 to view it in the browser.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Add additional notes about how to deploy this on a live system
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Built With
 
-### `npm run eject`
+Provide a list of the frameworks used to build this application, your list should include the name of the framework used, the url where the framework is available for download and what the framework was used for, see the example below 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* [ReactJS](https://reactjs.org/docs/getting-started.html) - The web framework used
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Sources Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+If in completing your lab / assignment / project you used any interpretation of someone else's code, then provide a list of where the code was implement, how it was implemented, why it was implemented, and how it was modified. See the sections below for more details.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### signup_component.js
+Lines 6 - 7
+```
+const validEmailRegex = 
+  RegExp(/^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i);
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### File Name
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Lines ## - ##
+---------------
 
-### Code Splitting
+```
+Copy and paste your code on lines mentioned 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```
 
-### Analyzing the Bundle Size
+The code above was created by adapting the code in [NAME](link) as shown below: 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```
+Copy and paste the snippet of code you are referencing
 
-### Making a Progressive Web App
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- <!---How---> The code in [NAME](link) was implemented by...
+- <!---Why---> [NAME](link)'s Code was used because...
+- <!---How---> [NAME](link)'s Code was modified by...
 
-### Advanced Configuration
+Repeat as needed
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### File Name
 
-### Deployment
+Lines ## - ##
+---------------
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+```
+Copy and paste your code on lines mentioned 
 
-### `npm run build` fails to minify
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The code above was created by adapting the code in [NAME](link) as shown below: 
+
+```
+Copy and paste the snippet of code you are referencing
+
+```
+
+- [How] The code in [NAME](link) was implemented by...
+- [Why] [NAME](link) Code was used because...
+- [How] [NAME](link) Code was modified by...
+
+Repeat as needed
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc

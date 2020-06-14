@@ -11,7 +11,7 @@ export default class Home extends Component {
     super(props);
     this.state = {
       displayCard: false,
-      countryName: null,
+      cardName: null,
       suggestions: [
         "Halifax",
         "Toronto",
@@ -26,7 +26,7 @@ export default class Home extends Component {
     this.setState({
       ...this.state,
       displayCard: true,
-      countryName: item
+      cardName: item
     })
   }
 
