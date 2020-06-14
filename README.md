@@ -14,10 +14,13 @@ This Assignment is avaliable on:
 ## Explanantion
 The web assignment is aimed at creating four front-end web features of the project that was chosen in the previous assignment.
 The pages that were chosen for this assignment are:
-1. Landing Page (Home Page) (Mandatory)     |   Route: "/home" |
-2. Registration Page (Sign-up) (Mandatory)  |   Route:         |
-3. Payments Page 
-4. Blogs Page
+|      Name          | 							Action                                       |
+|--------------------|-----------------------------------------------------------------------|
+| 1. Landing Page (Home Page) (Mandatory)      | Route: "/home"       |
+| 2. Registration Page (Sign-up) (Mandatory)   | Route: "/home"      |
+| 3. Payments Pagee    | Route: "/home"   |
+| 4. Blogs Page    | Route: "/home"      |
+
 
 ## Flow of control:
 1. Once the landing page is loaded, you will see the RentalVista logo and the navigation bar with multiple options - (Register, Blog, Payments, etc.)
