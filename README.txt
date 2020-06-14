@@ -1,6 +1,6 @@
 # Lab / Assignment / Project Title
 
-[Optional] If what is being submitted is an individual Lab or Assignment. Otherwise, include a brief one paragraph description about the project.
+
 
 * Date Created: DD MMM YYYY
 * Last Modification Date: DD MMM YYYY
