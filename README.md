@@ -4,7 +4,7 @@
 * Last Modification Date: 14 JUN 2020
 
 ## Author
-* [Amogh Adithya Bangalore] [am210633@dal.ca] [B00833535] - (Web developmer)
+* [Amogh Adithya Bangalore] [am210633@dal.ca] [B00833535] - (Web developer)
 
 ## Getting Started
 This Assignment is avaliable on:
