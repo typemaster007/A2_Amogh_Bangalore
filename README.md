@@ -48,7 +48,7 @@ Placeholder pages which are kept for future additions to the assignment are plac
 2. roomlistings_page.js
 3. viewrooms_page.js
 ---------------------------------------------------
-#Css
+## Css
 1. App.css
 2. modal.css
 3. paycss.css
@@ -96,7 +96,7 @@ If in completing your lab / assignment / project you used any interpretation of 
 
 ### signup_component.js
 The below lines were used to validate email input fields based on regex pattern.
-Lines 06 - 07
+Lines ##06 - 07## 
 ```
 const validEmailRegex = 
   RegExp(/^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i);
@@ -117,7 +117,7 @@ The code above was created by adapting the code in [stackoverflow](https://stack
 
 ### blog_page.js
 
-Lines ## - ##
+Lines ##130 - 145##
 ---------------
 
 ```
@@ -161,6 +161,7 @@ The code above was created by adapting the code in [Cloudboost](https://blog.clo
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* https://www.w3schools.com/js/js_validation.asp
+* https://www.npmjs.com/package/reactjs-popup
+* https://blog.heroku.com/deploying-react-with-zero-configuration
+* 

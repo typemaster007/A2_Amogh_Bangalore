@@ -34,7 +34,9 @@ class App extends Component  {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">
+          <a href='/'>
           <img className="img1" src={logo} alt="Logo" />
+          </a>
           <Link className="navbar-brand" to={"/home"}>RentalVista</Link>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">

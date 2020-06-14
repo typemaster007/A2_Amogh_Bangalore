@@ -16,7 +16,7 @@ export default class Search_complete extends Component {
         }
     }
 
-    hadleChange = (inputValue) => {
+    handleChange = (inputValue) => {
 
         if (inputValue.trim() !== '') {
 
@@ -63,7 +63,7 @@ export default class Search_complete extends Component {
                     type="text"
                     style={{float : 'left', paddingRight : '1px'}}
                     ref={this.inputRef}
-                    onChange={e => this.hadleChange(e.target.value)}
+                    onChange={e => this.handleChange(e.target.value)}
                     value={this.state.inputValue}
                     placeholder="Enter Location to begin Search"
                     style={{ width: 'calc(250px + 1rem)' }} />
