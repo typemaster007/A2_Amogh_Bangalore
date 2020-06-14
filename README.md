@@ -21,6 +21,11 @@ The pages that were chosen for this assignment are:
 | 3. Payments Page    						   | Route: "/payments"    |
 | 4. Blogs Page    							   | Route: "/blogs"    |
 
+Front End Framework used: ReactJS Reason: Responsivness, Easier to learn, Compatible with a wide range of backend services and offers large suite of API's. 
+API's used: reactjs-popup, react-toastify
+Typographic choice: 'Fira Sans', 'sans-serif', 'react-dom'
+Color Scheme: Blue and White (Reason: Aesthetic Appeal and calming effect)
+
 Supporting page: search_complete.js
 ## Flow of control:
 1. Once the landing page is loaded, you will see the RentalVista logo and the navigation bar with multiple options - (Register, Blog, Payments, etc.)
