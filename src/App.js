@@ -73,7 +73,7 @@ class App extends Component  {
               <li>
               <OverlayTrigger  
                 placement= "bottom" overlay={  <Tooltip id={`tooltip-$'bottom'`}><strong>Contact Section</strong></Tooltip>}>
-                <Link className="nav-link" to={"/"}>Contact us</Link>
+                <Link className="nav-link" >Contact us</Link>
               </OverlayTrigger>                  
               </li>
 

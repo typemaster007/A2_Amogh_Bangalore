@@ -6,6 +6,10 @@ import Popup from "reactjs-popup";
 import "react-toastify/dist/ReactToastify.css";
 import "./css/paycss.css";
 import {validateCard} from "./tools/validate_card";
+import visa from './images/visa.svg'; 
+import amex from './images/amex.svg'; 
+import master from './images/mastercard.svg'; 
+import discover from './images/discover.svg'; 
 
 toast.configure();
 let set = false;
@@ -173,6 +177,11 @@ export default class Payment extends React.Component {
     const {errors, formValid} = this.state;
       return (
         <div class="row" style={{ display: 'flex'}}>
+        <div class="container8" style={{marginLeft: '100px', background:'white'}}>
+          <h2 style={{background:'white',marginLeft: '100px', float: 'left'}}>Payment Page</h2> Accepted Cards :<img className="img1" src={visa} alt="visa" />
+          <img className="img1" src={amex} alt="amex" /><img className="img1" src={master} alt="master" />
+          <img className="img1" src={discover} alt="discover" />
+        </div>
         <div class="col-75" style={{ display: 'flex'}}>
           <div class="container4" style={{float : 'left', paddingRight : '5px', display: 'flex'}}>
             <form onSubmit={this.handleSubmit} noValidate >
