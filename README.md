@@ -1,4 +1,4 @@
-﻿## Assignment 2
+﻿### Assignment 2
 
 * Date Created: 10 JUN 2020
 * Last Modification Date: 14 JUN 2020
@@ -153,9 +153,9 @@ The code above was created by adapting the code in [Cloudboost](https://blog.clo
 
 ```
 
-- [How] The code in [NAME](link) was implemented by Antonio Erdeljac
-- [Why] [NAME](link) Code was used because a simplistic article submission layout for the blog page that could be modified upon was required.
-- [How] [NAME](link) Code was modified by adding titles, layout changes, css changes, function handlers and new components(links, buttons)
+- [How] The code in [Cloudboost](https://blog.cloudboost.io/learn-how-to-create-a-simple-blog-with-react-node-c05fa6889de3) was implemented by Antonio Erdeljac
+- [Why] [Cloudboost](https://blog.cloudboost.io/learn-how-to-create-a-simple-blog-with-react-node-c05fa6889de3) Code was used because a simplistic article submission layout for the blog page that could be modified upon was required.
+- [How] [Cloudboost](https://blog.cloudboost.io/learn-how-to-create-a-simple-blog-with-react-node-c05fa6889de3) Code was modified by adding titles, layout changes, css changes, function handlers and new components(links, buttons)
 
 
 ### payments_page.js
@@ -179,7 +179,7 @@ Lines ##247 - 259##
 
 ```
 
-The code above was created by adapting the code in [Cloudboost](https://blog.cloudboost.io/learn-how-to-create-a-simple-blog-with-react-node-c05fa6889de3) as shown below: 
+The code above was created by adapting the code in [ReactJS-popup](https://react-popup.elazizi.com/getting-started/) as shown below: 
 
 ```
 <Popup trigger={<button>Trigger</button>} position="top left">
@@ -195,9 +195,9 @@ The code above was created by adapting the code in [Cloudboost](https://blog.clo
 
 ```
 
-- [How] The code in [NAME](link) was implemented by Antonio Erdeljac
-- [Why] [NAME](link) Code was used because a simplistic article submission layout for the blog page that could be modified upon was required.
-- [How] [NAME](link) Code was modified by adding titles, layout changes, css changes, function handlers and new components(links, buttons)
+- [How] The code in [ReactJS-popup](https://react-popup.elazizi.com/getting-started/) was implemented by Y Jose
+- [Why] [ReactJS-popup](https://react-popup.elazizi.com/getting-started/) Code was used to get a base layout of the popup model which is lightweight.
+- [How] [ReactJS-popup](https://react-popup.elazizi.com/getting-started/) Code was modified by adding CSS, Close conditions, Layout changes, popup trigger c         conditions from the original boiler code.
 
 
 
