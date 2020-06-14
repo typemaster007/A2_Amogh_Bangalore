@@ -7,10 +7,7 @@ import Popup from "reactjs-popup";
 import Modal from "./components/tools/modalcomp";
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Button from 'react-bootstrap/Button';
-
-
-
+import Rooms from "./components/placeholders/roomlistings_page.js";
 import SignUp from "./components/signup_component";
 import Home from "./components/home_page";
 import Payments from "./components/payments_page";
@@ -20,15 +17,7 @@ import Blog from "./components/blog_page";
 
 class App extends Component  {
 
-  state = {
-    show: false
-  };
-  showModal = e => {
-    this.setState({
-      show: !this.state.show
-    });
-  };
-  
+    
  render(){
   return (<Router>
     <div className="App">
@@ -75,7 +64,6 @@ class App extends Component  {
                 <Link className="nav-link" >Contact us</Link>
               </OverlayTrigger>                  
               </li>
-
             </ul>
           </div>
         </div>
@@ -89,6 +77,10 @@ class App extends Component  {
             <Route path="/register" component={SignUp} />            
             <Route path="/payments" component={Payments} />
             <Route path="/blogs" component={Blog} />
+
+            {/*Below are placeholder Routes*/}
+            <Route path="/roomlistings" component={Rooms} />
+
           </Switch>
         </div>
       </div>

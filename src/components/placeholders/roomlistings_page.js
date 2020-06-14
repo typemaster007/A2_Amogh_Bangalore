@@ -20,21 +20,14 @@ export default class Roomlistings extends Component {
       render() {
         return (
             <div >
-              <div>
-              <button class="toggle-button" id="centered-toggle-button" onClick={e => {
-                  this.showModal(e);
-                }}
-              >
-                {" "}
-                show Modal{" "}
-              </button>
-              <Overlay greeting={greeting} onClose={this.showModal} show={this.state.show}>
-                <OverlayTrigger/>
-              </Overlay>                        
+              <div style={{padding:'25px'}}>
+                <h2> This is the placeholder for RoomListings page </h2>
+              
+                                   
             </div>
             <br/><br/><br/><br/>
             <div>
-            <Link  className="btn btn-primary" to={"/viewroom"} style={{marginLeft : '10px'}} >View room 1</Link>   
+            <Link  className="btn btn-primary" to={"/home"} style={{marginLeft : '300px'}} >Back to Home</Link>   
             </div>
             </div>  
           );
