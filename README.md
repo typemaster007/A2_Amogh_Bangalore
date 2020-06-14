@@ -11,7 +11,7 @@ This Assignment is avaliable on:
 * Heroku : https://a2-amogh-bangalore.herokuapp.com/home
 * Git    : https://github.com/typemaster007/A2_Amogh_Bangalore.git
 
-## Explanantion
+### Explanantion
 The web assignment is aimed at creating four front-end web features of the project that was chosen in the previous assignment.
 The pages that were chosen for this assignment are:
 |      Feature Name         				   | 							Route                                     |
@@ -27,7 +27,7 @@ Typographic choice: 'Fira Sans', 'sans-serif', 'react-dom'
 Color Scheme: Blue and White (Reason: Aesthetic Appeal and calming effect)
 
 Supporting page: search_complete.js
-## Flow of control:
+### Flow of control:
 1. Once the landing page is loaded, you will see the RentalVista logo and the navigation bar with multiple options - (Register, Blog, Payments, etc.)
 2. The search bar in the middle-left of the landing page is used to run the search for locations for the user.
 3. The user can enter the query location and will be navigated to the placeholder room views page.
@@ -36,7 +36,7 @@ Supporting page: search_complete.js
 6. The Blogs option will navigate the user to the blogs page, where the user can create a blog for submission and browse other blogs.
 7. The Payments option will navigate the user to the Payments page, where the user can enter the payment details with validations.
 8. The homepage has the available options highlighted active which will make it user for the marker to navigate active pages.
-## Files Inlcuded
+### Files Inlcuded
 --------------------------------------------------
 1. home_page.js (Landing Page) Route: "/home" 
 2. signup_component.js (Signup Page) Route: "/register"
@@ -53,12 +53,12 @@ Placeholder pages which are kept for future additions to the assignment are plac
 2. roomlistings_page.js
 3. viewrooms_page.js
 ---------------------------------------------------
-## Css
+### Css
 1. App.css
 2. modal.css
 3. paycss.css
 ---------------------------------------------------
-## Images
+### Images
 1. amex.svg [2]
 2. discover.svg [2]
 3. logo_web.png 
