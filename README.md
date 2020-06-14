@@ -1,23 +1,61 @@
 ﻿# Assignment 2
 
-
 * Date Created: 10 JUN 2020
 * Last Modification Date: 14 JUN 2020
 
+#Author
+* [Amogh Adithya Bangalore](am210633@dal.ca)[B00833535] - (Web development)
 
-* [Amogh Adithya Bangalore](am210633@dal.ca) - (Web development)
+##Explanantion
+The web assignment is aimed at creating four front-end web features of the project that was chosen in the previous assignment.
+The pages that were chosen for this assignment are:
+1. Landing Page (Home Page) (Mandatory)
+2. Registration Page (Sign-up) (Mandatory)
+3. Payments Page 
+4. Blogs Page
 
-
-
-## Getting Started
-
-
+Flow of control:
+1. Once the landing page is loaded, you will see the RentalVista logo and the navigation bar with multiple options - (Register, Blog, Payments, etc.)
+2. The search bar in the middle-left of the landing page is used to run the search for locations for the user.
+3. The user can enter the query location and will be navigated to the placeholder room views page.
+4. By pressing the home button on the top left, the user can return to the landing area and try the 3 remaining features.
+5. The register option will redirect the user to the sign-up page which is incorporated with sign up validations.
+6. The Blogs option will navigate the user to the blogs page, where the user can create a blog for submission and browse other blogs.
+7. The Payments option will navigate the user to the Payments page, where the user can enter the payment details with validations.
+8. The homepage has the available options highlighted active which will make it user for the marker to navigate active pages.
+#Files Inlcuded
+--------------------------------------------------
+1. home_page.js (Landing Page) Route: "/home" 
+2. signup_component.js (Signup Page) Route: "/register"
+3. payments_page.js (Payments Page) Route: "/payments"
+4. blog_page.js (Blogs Page) "/blogs"
+--------------------------------------------------
+Under Folder "Tools" these are supporting files
+1. validate_card.js - {For validating credit card number in Payments Page}
+2. overlay.js - {For placing Overlay tooltip pointers on future/Unfinished links}
+3. modalcomp - {For creating modal popups}
+--------------------------------------------------
+Placeholder pages which are kept for future additions to the assignment are placed in the "Placeholder" folder
+1. login_component.js
+2. roomlistings_page.js
+3. viewrooms_page.js
+---------------------------------------------------
+#Css
+1. App.css
+2. modal.css
+3. paycss.css
+---------------------------------------------------
+#Images
+1. amex.svg
+2. discover.svg 
+3. logo_web.png
+4. mastercard.svg
+5. room1.jpg
+6. room2.jpg
+7. visa.svg
+---------------------------------------------------
 ### Prerequisites
 
-Give examples or provide a list of the required software / libraries / plug-ins
-
-
-See the following section for detailed step-by-step instructions on how to install this software / libraries / plug-ins
 
 ### Installing
 In the project directory, you can run:
