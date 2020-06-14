@@ -8,14 +8,14 @@
 
 ## Links
 This Assignment is avaliable on:
-1. Heroku : https://a2-amogh-bangalore.herokuapp.com/home
-2. Git    : https://github.com/typemaster007/A2_Amogh_Bangalore.git
+* Heroku : https://a2-amogh-bangalore.herokuapp.com/home
+* Git    : https://github.com/typemaster007/A2_Amogh_Bangalore.git
 
 ## Explanantion
 The web assignment is aimed at creating four front-end web features of the project that was chosen in the previous assignment.
 The pages that were chosen for this assignment are:
-1. Landing Page (Home Page) (Mandatory)
-2. Registration Page (Sign-up) (Mandatory)
+1. Landing Page (Home Page) (Mandatory)     |   Route: "/home" |
+2. Registration Page (Sign-up) (Mandatory)  |   Route:         |
 3. Payments Page 
 4. Blogs Page
 
