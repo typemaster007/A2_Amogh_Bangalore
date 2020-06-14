@@ -177,7 +177,7 @@ export default class Payment extends React.Component {
     const {errors, formValid} = this.state;
       return (
         <div class="row" style={{ display: 'flex'}}>
-        <div class="container8" style={{marginLeft: '100px', background:'white'}}>
+        <div class="container8" style={{marginLeft: '100px', background:'white', paddingTop: '15px'}}>
           <h2 style={{background:'white',marginLeft: '100px', float: 'left'}}>Payment Page</h2> Accepted Cards :<img className="img1" src={visa} alt="visa" />
           <img className="img1" src={amex} alt="amex" /><img className="img1" src={master} alt="master" />
           <img className="img1" src={discover} alt="discover" />

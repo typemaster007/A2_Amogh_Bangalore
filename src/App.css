@@ -317,6 +317,9 @@ p {
   margin-left: 10px;
   margin-right: none!important;
 }
+.mb-3, .my-3 {
+  margin-bottom: none!important;
+}
 
 .suggestionList {
     margin-top: 0;
@@ -379,4 +382,10 @@ p {
   /* padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
+}
+.label1{
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+  margin: none !important;
+  padding: none !important;
 }
