@@ -36,7 +36,7 @@ Once the installation is complete, Open http://localhost:3000 to view it in the 
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+This application is deployed on Heroku. The link is : https://a2-amogh-bangalore.herokuapp.com/home
 
 ## Built With
 
@@ -49,58 +49,69 @@ Provide a list of the frameworks used to build this application, your list shoul
 If in completing your lab / assignment / project you used any interpretation of someone else's code, then provide a list of where the code was implement, how it was implemented, why it was implemented, and how it was modified. See the sections below for more details.
 
 ### signup_component.js
-Lines 6 - 7
+The below lines were used to validate email input fields based on regex pattern.
+Lines 06 - 07
 ```
 const validEmailRegex = 
   RegExp(/^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i);
 
 ```
 
-### File Name
+The code above was created by adapting the code in [stackoverflow](https://stackoverflow.com/questions/38091894/regular-expression-for-email-not-working) as shown below: 
+
+```
+  var regExpEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+
+```
+
+- <!---How---> The code in [stackoverflow](https://stackoverflow.com/questions/38091894/regular-expression-for-email-not-working) was implemented by Nikhil Ghuse
+- <!---Why---> [stackoverflow](https://stackoverflow.com/questions/38091894/regular-expression-for-email-not-working)'s Code was used because the regex pattern used previously was not working
+- <!---How---> [stackoverflow](https://stackoverflow.com/questions/38091894/regular-expression-for-email-not-working)'s Code was modified by adding pattern matches to accept numbers and special characters
+
+
+### blog_page.js
 
 Lines ## - ##
 ---------------
 
 ```
-Copy and paste your code on lines mentioned 
+<div className="col-7 " style={{ marginLeft: '1%', width: "150px"}}  >
+            <label1 className="label1" style={{ margin: 'none!important'}}>Title:</label1>
+            <input className="form-control mb-2" onChange={this.handleChange} noValidate  name="title" 
+            value={title} placeholder="Article Title" style={{ width: '300px', display: 'flex'}}/>
+            
+            <label1 className="label1" style={{ margin: 'none!important'}}>Description:</label1>            
+            <textarea className="form-control mb-2 " onChange={this.handleChange} noValidate
+             placeholder="Article Description" name='desc' value={body} style={{ width: '300px'}}>
+            </textarea>
+            <label1 className="label1" style={{ margin: 'none!important'}}>Author:</label1>
+            <input className="form-control mb-2" onChange={this.handleChange} noValidate
+                value={author} placeholder="Article Author" name="author" style={{ width: '300px'}} />
+            
+            <button className="btn1 btn-primary">Submit</button>
+            <Link className="btn1 btn-primary btn-inline" to={"/"} style={{marginLeft: '15px'}}>Cancel</Link>
+        </div>
 
 ```
 
-The code above was created by adapting the code in [NAME](link) as shown below: 
+The code above was created by adapting the code in [Cloudboost](https://blog.cloudboost.io/learn-how-to-create-a-simple-blog-with-react-node-c05fa6889de3) as shown below: 
 
 ```
-Copy and paste the snippet of code you are referencing
-
-```
-
-- <!---How---> The code in [NAME](link) was implemented by...
-- <!---Why---> [NAME](link)'s Code was used because...
-- <!---How---> [NAME](link)'s Code was modified by...
-
-Repeat as needed
-
-### File Name
-
-Lines ## - ##
----------------
-
-```
-Copy and paste your code on lines mentioned 
+<div className="col-12 col-lg-6 offset-lg-3">
+        <input className="form-control my-3" placeholder="Article Title" />
+        <textarea className="form-control my-3" placeholder="Article Description">
+        </textarea>
+        <input className="form-control my-3" placeholder="Article Author" />
+        <button className="btn btn-primary float-right">Submit</button>
+</div>
 
 ```
 
-The code above was created by adapting the code in [NAME](link) as shown below: 
+- [How] The code in [NAME](link) was implemented by Antonio Erdeljac
+- [Why] [NAME](link) Code was used because a simplistic article submission layout for the blog page that could be modified upon was required.
+- [How] [NAME](link) Code was modified by adding titles, layout changes, css changes, function handlers and new components(links, buttons)
 
-```
-Copy and paste the snippet of code you are referencing
 
-```
-
-- [How] The code in [NAME](link) was implemented by...
-- [Why] [NAME](link) Code was used because...
-- [How] [NAME](link) Code was modified by...
-
-Repeat as needed
 
 ## Acknowledgments
 
