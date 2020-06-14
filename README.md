@@ -4,9 +4,9 @@
 * Last Modification Date: 14 JUN 2020
 
 ## Author
-* [Amogh Adithya Bangalore](am210633@dal.ca)[B00833535] - (Web development)
+* [Amogh Adithya Bangalore](am210633@dal.ca) [B00833535] - (Web development)
 
-## Links
+## Getting Started
 This Assignment is avaliable on:
 * Heroku : https://a2-amogh-bangalore.herokuapp.com/home
 * Git    : https://github.com/typemaster007/A2_Amogh_Bangalore.git
@@ -54,13 +54,13 @@ Placeholder pages which are kept for future additions to the assignment are plac
 3. paycss.css
 ---------------------------------------------------
 ## Images
-1. amex.svg
-2. discover.svg 
-3. logo_web.png
-4. mastercard.svg
-5. room1.jpg
-6. room2.jpg
-7. visa.svg
+1. amex.svg [2]
+2. discover.svg [2]
+3. logo_web.png 
+4. mastercard.svg [2]
+5. room1.jpg [1]
+6. room2.jpg [1]
+7. visa.svg [2]
 ---------------------------------------------------
 ### Prerequisites
 
@@ -200,11 +200,13 @@ The code above was created by adapting the code in [ReactJS-popup](https://react
 - [How] [ReactJS-popup](https://react-popup.elazizi.com/getting-started/) Code was modified by adding CSS, Close conditions, Layout changes, popup trigger c         conditions from the original boiler code.
 
 
-
+## Image References
+[1] Photo by Ian on Unsplash "https://unsplash.com/photos/SNoJy06KkY4"
+[2] SVG Credit Card & Payment by Aaron F. Iconshttps://www.aaronfagan.ca/blog/2017/svg-credit-card-payment-icons-6-styles-80-icons/
 
 ## Acknowledgments
 
 * https://www.w3schools.com/js/js_validation.asp
 * https://www.npmjs.com/package/reactjs-popup
 * https://blog.heroku.com/deploying-react-with-zero-configuration
-* 
+* https://reactjs.org/docs/handling-events.html
