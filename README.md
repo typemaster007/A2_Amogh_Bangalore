@@ -158,6 +158,49 @@ The code above was created by adapting the code in [Cloudboost](https://blog.clo
 - [How] [NAME](link) Code was modified by adding titles, layout changes, css changes, function handlers and new components(links, buttons)
 
 
+### payments_page.js
+
+Lines ##247 - 259##
+---------------
+```
+		<Popup trigger={<button type="submit" className="btn btn-primary btn-inline" style={{marginLeft: '90px'}}>Checkout</button>} 
+                modal
+                closeOnDocumentClick
+                >                
+                {this.state.errorCount !== null ? 
+                <div style={{border: '5px',borderBlockColor: 'black', borderRadius: '10px', background: 'white'}}>
+                  <h8 style={{display: 'flex', justifyContent: 'center'}}>Payment details</h8>
+                  <div className="validmsg" style={{display: 'flex', justifyContent: 'center'}}> 
+                {formValid ? 'Payment Completed Successfully!' 
+                : 'Incomplete details, Please enter all the details correctly! (Press Enter to close or click outside)'}
+                </div></div> : 'Form not submitted'}
+                
+        </Popup>
+
+```
+
+The code above was created by adapting the code in [Cloudboost](https://blog.cloudboost.io/learn-how-to-create-a-simple-blog-with-react-node-c05fa6889de3) as shown below: 
+
+```
+<Popup trigger={<button>Trigger</button>} position="top left">
+    {close => (
+      <div>
+        Content here
+        <a className="close" onClick={close}>
+          &times;
+        </a>
+      </div>
+    )}
+  </Popup>
+
+```
+
+- [How] The code in [NAME](link) was implemented by Antonio Erdeljac
+- [Why] [NAME](link) Code was used because a simplistic article submission layout for the blog page that could be modified upon was required.
+- [How] [NAME](link) Code was modified by adding titles, layout changes, css changes, function handlers and new components(links, buttons)
+
+
+
 
 ## Acknowledgments
 
