@@ -1,4 +1,4 @@
-﻿### Assignment 2
+﻿## Assignment 2
 
 * Date Created: 10 JUN 2020
 * Last Modification Date: 14 JUN 2020
@@ -94,7 +94,7 @@ Provide a list of the frameworks used to build this application, your list shoul
 
 If in completing your lab / assignment / project you used any interpretation of someone else's code, then provide a list of where the code was implement, how it was implemented, why it was implemented, and how it was modified. See the sections below for more details.
 
-### signup_component.js
+## signup_component.js
 The below lines were used to validate email input fields based on regex pattern.
 Lines ##06 - 07## 
 ```
@@ -115,7 +115,7 @@ The code above was created by adapting the code in [stackoverflow](https://stack
 - <!---How---> [stackoverflow](https://stackoverflow.com/questions/38091894/regular-expression-for-email-not-working)'s Code was modified by adding pattern matches to accept numbers and special characters
 
 
-### blog_page.js
+## blog_page.js
 
 Lines ##130 - 145##
 ---------------
@@ -158,7 +158,7 @@ The code above was created by adapting the code in [Cloudboost](https://blog.clo
 - [How] [Cloudboost](https://blog.cloudboost.io/learn-how-to-create-a-simple-blog-with-react-node-c05fa6889de3) Code was modified by adding titles, layout changes, css changes, function handlers and new components(links, buttons)
 
 
-### payments_page.js
+## payments_page.js
 
 Lines ##247 - 259##
 ---------------
