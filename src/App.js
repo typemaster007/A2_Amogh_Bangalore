@@ -17,6 +17,7 @@ import Home from "./components/home_page";
 import Rooms from "./components/roomlistings_page";
 import Viewroom from "./components/viewrooms_page";
 import Payments from "./components/payments_page";
+import Blog from "./components/blog_page";
 
 
 
@@ -40,13 +41,23 @@ class App extends Component  {
           <Link className="navbar-brand" to={"/"}>RentalVista</Link>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to={"/sign-in"}>Login</Link>
+              
+              <li className="nav-item">              
+              <OverlayTrigger  
+                placement= "bottom" overlay={  <Tooltip id={`tooltip-$'bottom'`}><strong>Login page</strong></Tooltip>}>
+                <Link className="nav-link" variant="secondary">Login</Link>
+              </OverlayTrigger>                
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/register"}>Register</Link>
+                <Link className="nav-link" to={"/register"} style={{color: 'black'}}>Register</Link>
               </li>
               <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/blogs"} style={{color: 'black'}}>Blogs</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/payments"} style={{color: 'black'}} >Payments</Link>
+              </li>
               <li className="nav-item">              
               <OverlayTrigger  
                 placement= "bottom" overlay={  <Tooltip id={`tooltip-$'bottom'`}><strong>Help Section</strong></Tooltip>}>
@@ -80,6 +91,7 @@ class App extends Component  {
             <Route path="/roomlistings" component={Rooms} />
             <Route path="/viewroom" component={Viewroom} />
             <Route path="/payments" component={Payments} />
+            <Route path="/blogs" component={Blog} />
           </Switch>
         </div>
       </div>

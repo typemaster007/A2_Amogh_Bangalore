@@ -1,7 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import StripeCheckout from "react-stripe-checkout";
-import axios from "axios";
+
 import { toast } from "react-toastify";
 import Popup from "reactjs-popup";
 
@@ -14,16 +12,12 @@ let set = false;
 const validateemail = 
   RegExp(/^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i);
 
-const product = {
-    name: "Improve your Room Posting Priority",
-    price: 299.99,
-    description: "Room PAdvertisement Fee"
-  }
+
 const validateForm = (errors) => {
     let valid = false;
     Object.values(errors).forEach(      // if we have an error string set valid to false
       (val) => 
-      { if(val=='set')
+      { if(val==='set')
             { valid = true; }
             else
             { valid = false; }
@@ -36,7 +30,7 @@ const validateForm = (errors) => {
     Object.values(errors).forEach(
       (val) => {if(val.length > 0)
         {
-            if(val!='set'){
+            if(val!=='set'){
                 (count = count+1);
             }
         } }
@@ -86,12 +80,12 @@ export default class Payment extends React.Component {
               event.target.value = Math.max(0, parseInt(event.target.value) ).toString().slice(0,16);
             }       
             
-              if(validateCard(value)==true && value.length==16)
+              if(validateCard(value)===true && value.length===16)
               {
                 errors.cardnum = "set";
                 set = true;
               }
-              else if(value.length==17 && set==true)
+              else if(value.length===17 && set===true)
               {
                 errors.cardnum = "set";
               
@@ -127,10 +121,10 @@ export default class Payment extends React.Component {
                 event.target.value = event.target.value.replace(/[^A-Za-z]/ig, '');
               }
 
-          if(event.target.value == 'JAN'| event.target.value == 'FEB'| event.target.value == 'MAR'
-          | event.target.value == 'APR'| event.target.value == 'MAY'| event.target.value == 'JUN'
-          | event.target.value == 'JUL'| event.target.value == 'AUG'| event.target.value == 'SEPT'
-          | event.target.value == 'OCT'| event.target.value == 'NOV'| event.target.value == 'DEC')
+          if(event.target.value === 'JAN'| event.target.value === 'FEB'| event.target.value === 'MAR'
+          | event.target.value === 'APR'| event.target.value === 'MAY'| event.target.value === 'JUN'
+          | event.target.value === 'JUL'| event.target.value === 'AUG'| event.target.value === 'SEPT'
+          | event.target.value === 'OCT'| event.target.value === 'NOV'| event.target.value === 'DEC')
           {
             errors.expmonth = 'set';
           }
@@ -261,22 +255,22 @@ export default class Payment extends React.Component {
           <h4>Payment Status</h4>
                   
                   <label for="cname">Status</label>
-                  <div >&nbsp;{errors.fullname.length > 0 && errors.fullname != 'set' 
+                  <div >&nbsp;{errors.fullname.length > 0 && errors.fullname !== 'set' 
                   &&  <span1 className='error1'>{errors.fullname}</span1>}</div>
                   <br/>
-                  <div>&nbsp;{errors.cardnum.length > 0 && errors.cardnum != 'set' 
+                  <div>&nbsp;{errors.cardnum.length > 0 && errors.cardnum !== 'set' 
                   &&   <span1 className='error1'>{errors.cardnum}</span1>}</div>
                   <br/>
-                  <div>&nbsp;{errors.email.length > 0 && errors.email != 'set' 
+                  <div>&nbsp;{errors.email.length > 0 && errors.email !== 'set' 
                   &&   <span1 className='error1'>{errors.email}</span1>}</div>
                   <br/>
-                  <div>&nbsp;{errors.expmonth.length > 0 && errors.expmonth != 'set' 
+                  <div>&nbsp;{errors.expmonth.length > 0 && errors.expmonth !== 'set' 
                   &&   <span1 className='error1'>{errors.expmonth}</span1>}</div>
                   <br/>
-                  <div>&nbsp;{errors.expyear.length > 0 && errors.expyear != 'set' 
+                  <div>&nbsp;{errors.expyear.length > 0 && errors.expyear !== 'set' 
                   &&   <span1 className='error1'>{errors.expyear}</span1>}</div>
                   <br/>
-                  <div>&nbsp;{errors.cvv.length > 0 && errors.cvv != 'set' 
+                  <div>&nbsp;{errors.cvv.length > 0 && errors.cvv !== 'set' 
                   &&   <span1 className='error1'>{errors.cvv}</span1>}</div>
           </div>
           

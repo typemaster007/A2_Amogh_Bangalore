@@ -11,7 +11,7 @@ var acceptedCards = {
   
   export function validateCard(value) {
     // remove all non digit characters
-    var value = value.replace(/\D/g, '');
+    value = value.replace(/\D/g, '');
     var sum = 0;
     var shouldDouble = false;
     // loop through values starting at the rightmost side
@@ -26,7 +26,7 @@ var acceptedCards = {
       shouldDouble = !shouldDouble;
     }
     
-    var valid = (sum % 10) == 0;
+    var valid = (sum % 10) === 0;
     var accepted = false;
     
     // loop through the keys (visa, mastercard, amex, etc.)
@@ -43,8 +43,8 @@ var acceptedCards = {
   
   export function validateCVV(creditCard, cvv) {
     // remove all non digit characters
-    var creditCard = creditCard.replace(/\D/g, '');
-    var cvv = cvv.replace(/\D/g, '');
+    creditCard = creditCard.replace(/\D/g, '');
+    cvv = cvv.replace(/\D/g, '');
     // american express and cvv is 4 digits
     if ((acceptedCards.amex).test(creditCard)) {
       if((/^\d{4}$/).test(cvv))
