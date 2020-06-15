@@ -189,7 +189,7 @@ const validFirstnamereg =
                 
                 <Link type="submit" className="btn btn-primary btn-inline2" to="/">Cancel</Link>
                 <p className="forgot-password2 ">
-                    Already registered <a href="/sign-in">sign in?</a>                    
+                    Already registered <a href="/home">sign in?</a>                    
                 </p>
 
                 

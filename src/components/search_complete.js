@@ -47,6 +47,10 @@ export default class Search_complete extends Component {
     }
 
     componentDidMount() {
+        
+        const imagesToBePreloaded = [logo]
+        imagesToBePreloaded.forEach(image => { new Image().src = image })
+        
         this.inputRef.current.focus();
     }
 

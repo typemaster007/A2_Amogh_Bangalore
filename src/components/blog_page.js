@@ -99,7 +99,7 @@ class Form extends React.Component {
             case 'title': 
                 if((!event.target.value.match(/^[a-zA-Z ]+$/i)))
                 {
-                    event.target.value = event.target.value.replace(/[^A-Za-z]/ig, '')
+                    event.target.value = event.target.value.replace(/[^A-Za-z ]/ig, '')
                 }
                 else{
                     errors.title = 
@@ -113,7 +113,7 @@ class Form extends React.Component {
             case 'desc': 
                 if((!event.target.value.match(/^[a-zA-Z .]+$/i)))
                 {
-                    event.target.value = event.target.value.replace(/[^A-Za-z]/ig, '')
+                    event.target.value = event.target.value.replace(/[^A-Za-z. ]/ig, '')
                 }
                 else{
                     errors.desc = 
@@ -127,7 +127,7 @@ class Form extends React.Component {
             case 'author': 
                 if((!event.target.value.match(/^[a-zA-Z .]+$/i)))
                 {
-                    event.target.value = event.target.value.replace(/[^A-Za-z]/ig, '')
+                    event.target.value = event.target.value.replace(/[^A-Za-z. ]/ig, '')
                 }
                 else{
                     errors.author = 
