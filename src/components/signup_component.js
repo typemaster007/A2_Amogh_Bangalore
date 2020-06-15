@@ -181,7 +181,7 @@ const validFirstnamereg =
                 <div><h3 style={{display: 'flex', justifyContent: 'center'}}>Register details</h3>
                 <div className="validmsg" style={{display: 'flex', justifyContent: 'center'}}> 
                 {formValid ? 'User registered Successfully! ✅ ' 
-                : 'Incomplete details, Please enter all the details correctly! '}</div></div> : 'Form not submitted'}
+                : 'Incomplete details, Please enter all the details correctly! (Press Enter to close or click outside)'}</div></div> : 'Form not submitted'}
                 
                 </Popup>
                 

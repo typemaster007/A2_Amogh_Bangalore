@@ -262,9 +262,9 @@ export default class Payment extends React.Component {
             </form>
           </div>
           <div class="container6" style={{float : 'left', paddingRight : '5px'}}>
-          <h4>Payment Status</h4>
+          <h4>Validation Status</h4>
                   
-                  <label for="cname">Status</label>
+                  <label for="cname">Status Messages</label>
                   <div >&nbsp;{errors.fullname.length > 0 && errors.fullname !== 'set' 
                   &&  <span1 className='error1'>{errors.fullname}</span1>}</div>
                   <br/>
