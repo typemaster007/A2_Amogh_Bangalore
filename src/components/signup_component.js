@@ -33,7 +33,7 @@ const validFirstnamereg =
     Object.values(errors).forEach(
       (val) => {if(val.length > 0)
         {
-            if(val!='set'){
+            if(val!=='set'){
                 (count = count+1);
             }
         } }
@@ -128,7 +128,7 @@ const validFirstnamereg =
         return (
             <div class="container5">
             <form onSubmit={this.handleSubmit} noValidate >
-                <h3 style={{display: 'flex', justifyContent: 'center'}}>Register</h3>                
+                <h1 style={{display: 'flex', justifyContent: 'center'}}>Register your account</h1>                
 
                 <div className="firstname">                
                     <label>Name:  &nbsp;&nbsp;</label>
@@ -180,7 +180,7 @@ const validFirstnamereg =
                 {this.state.errorCount !== null ? 
                 <div><h3 style={{display: 'flex', justifyContent: 'center'}}>Register details</h3>
                 <div className="validmsg" style={{display: 'flex', justifyContent: 'center'}}> 
-                {formValid ? 'User registered Successfully! ✅ directing to Home Page' 
+                {formValid ? 'User registered Successfully! ✅ ' 
                 : 'Incomplete details, Please enter all the details correctly! '}</div></div> : 'Form not submitted'}
                 
                 </Popup>
